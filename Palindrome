@@ -1,0 +1,21 @@
+//https://www.facebook.com/srishti.agrawal.714/posts/162113345582696
+//Subscribed by Code House
+import java.util.Scanner; 
+class Palindrome {   
+ public static void main(String args[]) {  
+ Scanner input=new Scanner(System.in);
+  int rem,sum=0,rev;     
+  int n=input.nextInt();//It is the number variable to be checked for palindrome   
+  
+  rev=n;     
+  while(n>0) {     
+   rem=n%10;  //getting remainder   
+   sum=(sum*10)+rem;     
+   n=n/10;     
+  }     
+  if(rev==sum)     
+   System.out.println("It is a palindrome number ");     
+  else     
+   System.out.println("It is not a palindrome number");     
+}  
+}  
